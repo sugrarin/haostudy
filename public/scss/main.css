@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/assets/fonts/proxima-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/assets/fonts/proxima-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
+body {
+  background-color: #ffffff; }
+
+body {
+  color: #111111; }

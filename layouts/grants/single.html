@@ -1,0 +1,277 @@
+{{ partial "header.html" . }}
+
+<main class="pages-grants">
+
+  <section class="page-header page-header--center">
+    <h1 class="page-title">
+      Обучение в Китае по гранту
+    </h1>
+    <p class="page-subtitle">
+      Получите 100% гарантию зачисления в ВУЗ и высокий шанс на грант
+    </p>
+    <a class="page-header-button" href="/google">
+      Подать заявку
+    </a>
+  </section>
+
+  <section class="grants-features">
+
+    <div id="languages" class="feature-card">
+      <img class="feature-image" src="/assets/images/grants/feature-1.svg" alt="">
+      <span class="feature-title">
+        Не нужно знать китайский или английский
+      </span>
+    </div>
+
+    <div id="exams" class="feature-card">
+      <img class="feature-image" src="/assets/images/grants/feature-2.svg" alt="">
+      <span class="feature-title">
+        Не нужно сдавать экзамены
+      </span>
+    </div>
+
+    <div id="grants" class="feature-card">
+      <img class="feature-image" src="/assets/images/grants/feature-3.svg" alt="">
+      <span class="feature-title">
+        Поступают на грант
+      </span>
+    </div>
+
+  </section>
+
+  <section class="grants-intro">
+    <p class="grants-text">
+      <strong>Грант на обучение</strong> — это финансовая помощь, предоставляемая студентам в виде скидки на оплату
+      учебы, проживания, или в виде стипендии:
+    </p>
+
+    <div class="grants-types">
+
+      <div class="grant">
+        <h3 class="grant-title">
+          Полный
+        </h3>
+        <ul class="grant-list">
+          <li class="grant-list-item">
+            📚 Обучение
+          </li>
+          <li class="grant-list-item">
+            🏠 Проживание
+          </li>
+          <li class="grant-list-item">
+            💸 Стипендия
+          </li>
+        </ul>
+      </div>
+
+      <div class="grant">
+        <h3 class="grant-title">
+          Полугрант
+        </h3>
+        <ul class="grant-list">
+          <li class="grant-list-item">
+            🏠 Скидка на проживание
+          </li>
+          <li class="grant-list-item">
+            💸 Стипендия
+          </li>
+        </ul>
+      </div>
+
+      <div class="grant">
+        <h3 class="grant-title">
+          Стипендия
+        </h3>
+        <ul class="grant-list">
+          <li class="grant-list-item">
+            💸 Стипендия
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <p class="grants-text">
+      У каждого университета своя грантовая программа. Мы сотрудничаем с университетами напрямую, это гарантирует
+      100% зачисление в университет.
+    </p>
+  </section>
+
+  <!-- <section class="universities">
+    <h2 class="section-title">
+      Университеты на 2025 год
+    </h2>
+    <p class="section-subtitle">
+      Подайте заявку, чтобы узнать актуальную программу
+    </p>
+
+    {{ range site.Data.grants.universities }}
+    <div class="university">
+      <img class="university-image" src="{{ .image }}" alt="">
+      <span class="university-city">{{ .city }}</span>
+      <h3 class="university-title">{{ .title }}</h3>
+      <p class="university-text">{{ .description }}</p>
+      <a class="university-button" href="/">Отправить заявку</a>
+    </div>
+    {{ end }}
+
+    <div class="university-other">
+      <h3 class="university-title">
+        Хотите в другой город?
+      </h3>
+      <p class="university-text">
+        Свяжитесь с нами, мы подберём варианты.
+      </p>
+      <a class="university-button" href="/">Отправить заявку</a>
+    </div>
+
+  </section> -->
+
+  <section class="process">
+
+    <h2 class="section-title">
+      Как происходит поступление
+    </h2>
+
+    <div class="process-step">
+      <div class="process-step-number">
+        1
+      </div>
+      <h3 class="process-step-title">
+        Знакомство, выбор университета и специальности
+      </h3>
+      <p class="process-step-text">
+        Предложим вам актуальные университеты, рассмотрим ваши предпочтения.
+      </p>
+    </div>
+
+    <div class="process-step">
+      <div class="process-step-number">
+        2
+      </div>
+      <h3 class="process-step-title">
+        Подготовка документов
+      </h3>
+      <p class="process-step-text">
+        Отправим вам список необходимых для поступления документов и советы.
+      </p>
+    </div>
+
+    <div class="process-step">
+      <div class="process-step-number">
+        3
+      </div>
+      <h3 class="process-step-title">
+        Подача на грант
+      </h3>
+      <p class="process-step-text">
+        Проверяем ваши документы и подаем их в университет.
+      </p>
+    </div>
+
+    <a class="big-button" href="/google">
+      Подать заявку
+    </a>
+
+    <div class="process-step">
+      <div class="process-step-number">
+        +
+      </div>
+      <h3 class="process-step-title">
+        Дополнительные услуги
+      </h3>
+      <p class="process-step-text">
+        Если нужно, организуем встречу, купим сим-карту, зарегистрируем в мессенджере, покажем район, ответим на 
+        вопросы, поможем с переводом.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="pricing">
+
+    <h2 class="section-title">
+      Стоимость обучения
+    </h2>
+    <p class="section-subtitle">
+      Зависит от конкретного университета – мы подберем предложение, когда вы выберете университет. Вот как получается
+      в среднем:
+    </p>
+
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3 class="pricing-card-title">
+          Без гранта
+        </h3>
+        <ul class="pricing-card-list">
+          <li class="pricing-card-list-item">
+            Обучение $3000/год
+          </li>
+          <li class="pricing-card-list-item">
+            Проживание $2500/год
+          </li>
+        </ul>
+        <img class="pricing-card-image" src="/assets/images/system/pricing-1.svg" alt="">
+      </div>
+      <div class="pricing-card">
+        <h3 class="pricing-card-title">
+          С грантом
+        </h3>
+        <ul class="pricing-card-list">
+          <li class="pricing-card-list-item">
+            Экономия на обучении и проживании до 80%
+          </li>
+          <li class="pricing-card-list-item">
+            Шанс на стипендию
+          </li>
+        </ul>
+        <img class="pricing-card-image" src="/assets/images/system/pricing-2.svg" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="faq">
+
+    <h2 class="section-title">
+      Вопросы и ответы
+    </h2>
+
+    {{ range site.Data.grants.questions }}
+    <div class="question-block">
+      <h3 class="question">{{ .question }}</h3>
+      <p class="answer">{{ .answer }}</p>
+    </div>
+    {{ end }}
+
+
+  </section>
+
+  <div class="contacts-anchor" id="contacts">
+  </div>
+
+  <section class="contacts contacts--index">
+    <div class="contacts-text">
+      <h3 class="contacts-title">Остались вопросы? Свяжитесь с менеджером</h3>
+      <span class="contacts-situation">
+        Напишите нам – мы ответим на вопросы и подберём вам университет.
+      </span>
+    </div>
+    <div class="contacts-buttons">
+      <a class="contacts-button" href="https://wa.me/+77476172913">
+        <img class="contacts-button-icon" src="/assets/images/system/whatsapp-icon.svg" alt="">
+        WhatsApp
+      </a>
+      <a class="contacts-button" href="https://t.me/alikulovaa">
+        <img class="contacts-button-icon" src="/assets/images/system/telegram-icon.svg" alt="">
+        Telegram
+      </a>
+      <a class="contacts-button" href="mailto:mail@haostudy.ru">
+        <img class="contacts-button-icon" src="/assets/images/system/email-icon.svg" alt="">
+        mail@tochina.kz
+      </a>
+    </div>
+  </section>
+
+
+
+  {{ partial "footer.html" . }}

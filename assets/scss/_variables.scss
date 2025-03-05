@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/assets/fonts/proxima-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/assets/fonts/proxima-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Fonts
+$sans-serif-font: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, Roboto, sans-serif;
+
+// Colors
+$background-color: #ffffff;
+$image-background-color: #e9eaeb;
+
+$text-color: #111111;
+$button-color: #1E1E1E;
+$button-text-color: #FFFFFF;
+
+$contacts-color: #111111;
+$contacts-button-color: #FFFFFF;
+$contacts-button-text-color: #111111;
+
+// Layout
+$mobile-screen-width: 760px;
+
+// Index sizes
+$index-heading-font-size: 32px;
+$index-heading-font-size-mobile: 24px;
+
+$card-title-font-size: 48px;
+$card-title-font-size-mobile: 22px;
+
+$card-subtitle-font-size: 22px;
+$card-subtitle-font-size-mobile: 18px;
+
+$contacts-text-font-size: 16px;
+$contacts-text-font-size-mobile: 14px;
+$contacts-button-font-size: 18px;
+$contacts-button-font-size-mobile: 16px;
+
+$page-title-font-size: 44px;
+$page-title-font-size-mobile: 32px;
+
+$page-subtitle-font-size: 24px;
+$page-subtitle-font-size-mobile: 20px;
+
+// Grants

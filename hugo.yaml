@@ -1,0 +1,22 @@
+baseURL: "haostudy.me"
+languageCode: "ru"
+title: "Хаостади – обучение и работа в Китае"
+
+disableKinds:
+  - taxonomy
+
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+
+build:
+  writeStats: true

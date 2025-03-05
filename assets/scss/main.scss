@@ -1,0 +1,312 @@
+@import "reset";
+@import "variables";
+@import "index";
+@import "grants";
+
+// General
+body {
+  margin: 12px 28px;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $sans-serif-font;
+
+  @media (max-width: $mobile-screen-width) {
+    margin: 12px 16px;
+  }
+}
+
+main {
+  margin: auto;
+  max-width: 984px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-weight: bold;
+}
+
+header {
+  margin: 0 -18px 60px;
+
+  @media (max-width: $mobile-screen-width) {
+    margin: 0 -8px 60px;
+  }
+}
+
+// Header
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0;
+  transition: all 0.2s ease;
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: $mobile-screen-width) {
+    display: none;
+  }
+}
+
+.main-menu--mobile {
+  display: none;
+
+  @media (max-width: $mobile-screen-width) {
+    display: inline;
+  }
+}
+
+.menu-item {
+  display: block;
+  padding: 6px 0;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.menu-item--active {
+  opacity: 0.7;
+  cursor: default;
+  text-decoration: none;
+}
+
+.menu-button {
+  padding: 7px 10px 8px;
+  background-color: $button-color;
+  color: $button-text-color;
+  border-radius: 8px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Contacts
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 40px auto;
+  background-color: $contacts-color;
+  color: $contacts-button-color;
+  padding: 28px;
+  border-radius: 24px;
+
+  @media (max-width: $mobile-screen-width) {
+    display: inline-block;
+  }
+}
+
+.contacts-text {
+  margin: 12px 0;
+
+  @media (max-width: $mobile-screen-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.contacts-title {
+  font-size: $index-heading-font-size;
+  margin-bottom: 8px;
+  line-height: 120%;
+}
+
+.contacts-situation {
+  font-size: $contacts-text-font-size;
+  display: block;
+  margin: 8px 0;
+}
+
+.contacts-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: $contacts-button-color;
+  color: $contacts-button-text-color;
+  padding: 12px;
+  text-align: center;
+  margin: 8px 0;
+  border-radius: 12px;
+  font-size: $contacts-button-font-size;
+  line-height: 100%;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.contacts-button-icon {
+  width: 36px;
+  margin: 0;
+}
+
+// Pages
+.pages-grants {
+  max-width: 900px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 54px;
+}
+
+.page-header--no-margin {
+  margin-bottom: -12px;
+}
+
+.page-header--center {
+  align-items: center;
+  text-align: center;
+}
+
+.page-header--left {
+  align-items: start;
+}
+
+.page-title {
+  font-size: $page-title-font-size;
+  line-height: 108%;
+  // letter-spacing: -1%;
+  color: $text-color;
+  margin-bottom: 12px;
+  display: inline;
+  font-weight: bold;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $page-title-font-size-mobile;
+  }
+}
+
+.page-subtitle {
+  font-size: $page-subtitle-font-size;
+  line-height: 140%;
+  color: $text-color;
+
+  display: inline;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $page-subtitle-font-size-mobile;
+  }
+}
+
+
+.page-header-button {
+  display: block;
+  text-align: center;
+  padding: 12px 24px 14px;
+  background-color: $button-color;
+  color: $button-text-color;
+  border-radius: 12px;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  margin: 24px 0;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.page-lead {
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 32px;
+}
+
+.fotorama-wrapper {
+  margin: 24px 0;
+}
+
+.fotorama__stage {
+  border-radius: 24px;
+}
+
+.page-h2 {
+  font-size: 28px;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.page-text {
+  font-size: 21px;
+  line-height: 140%;
+  margin: 4px 0 20px 0;
+  max-width: 840px;
+}
+
+.page-list {
+  font-size: 20px;
+  line-height: 140%;
+  margin: 14px 0 20px 0;
+  max-width: 840px;
+
+  li {
+    margin: 8px 0;
+  }
+}
+
+.big-button {
+  display: block;
+  text-align: center;
+  padding: 20px 10px 24px;
+  background-color: $button-color;
+  color: $button-text-color;
+  border-radius: 18px;
+  font-size: 26px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+
+
+// Footer
+footer {
+  margin: 60px 0 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}

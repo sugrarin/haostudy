@@ -1,0 +1,141 @@
+.notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin: 60px 0 12px;
+}
+
+.notice-icon {
+  width: 21px;
+  height: 20px;
+}
+
+.notice-text {
+  font-size: 17px;
+}
+
+.index-heading {
+  font-size: $index-heading-font-size;
+  text-align: center;
+  max-width: 524px;
+  margin: 0 auto 40px;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $index-heading-font-size-mobile;
+  }
+}
+
+.cards {
+  margin: 40px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  min-width: 300px;
+  min-height: 200px;
+  aspect-ratio: 1.9 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: 0px 0px 1px #111;
+  border-radius: 24px;
+  background-color: $image-background-color;
+  padding: 32px 24px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+
+  @media (max-width: $mobile-screen-width) {
+    padding: 20px;
+  }
+}
+
+.card-text--top {
+  justify-content: start;
+}
+
+.card-text--center {
+  justify-content: center;
+}
+
+.card-text--bottom {
+  justify-content: end;
+}
+
+.card-text--top-bottom {
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: $card-title-font-size;
+  line-height: 108%;
+  background-color: white;
+  color: black;
+  padding: 8px 8px 9px;
+  margin-bottom: 6px;
+  text-align: center;
+  display: inline;
+  border-radius: 12px;
+  font-weight: bold;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $card-title-font-size-mobile;
+  }
+}
+
+.card-subtitle {
+  font-size: $card-subtitle-font-size;
+  line-height: 108%;
+  background-color: white;
+  color: black;
+  padding: 8px 8px 9px;
+  text-align: center;
+  display: inline;
+  border-radius: 10px;
+  font-weight: bold;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $card-subtitle-font-size-mobile;
+  }
+}
+
+.card--camp {
+  background-image: url('/assets/images/index/camp.avif');
+}
+
+.card--grants {
+  background-image: url('/assets/images/index/grants.avif');
+}
+
+.card--translator {
+  background-image: url('/assets/images/index/translate.avif');
+}
+
+.card--tours {
+  background-image: url('/assets/images/index/factory.avif');
+}
+
+.card--dental {
+  background-image: url('/assets/images/index/dental.avif');
+}
+
+// Contacts
+.contacts--index {
+  max-width: 908px;
+}

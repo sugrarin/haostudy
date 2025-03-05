@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<main>
+
+      <h1 class="page-title">{{ .Title }}</h1>
+
+      {{ .Content }}
+
+      {{ range.Data.Pages }}
+      {{ if not .Params.hidden }}
+      <h3>
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </h3>
+      {{ end }}
+      {{ end }}
+
+</main>
+
+  {{ partial "footer.html" . }}
