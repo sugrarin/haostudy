@@ -1,15 +1,15 @@
 universities:
-  - image: "/assets/images/grants/university.avif"
+  - image: "/assets/images/university.avif"
     city: "San Diego"
     title: "Workforce readiness. Start‑up creativity"
     description: "Learn how Apple technology is powering San Diego State University's innovative incubator program."
 
-  - image: "/assets/images/grants/university.avif"
+  - image: "/assets/images/university.avif"
     city: "Beijing"
     title: "Global Innovation and Business"
     description: "Explore how Beijing University fosters innovation and entrepreneurship through cutting-edge technology and global partnerships."
 
-  - image: "/assets/images/grants/university.avif"
+  - image: "/assets/images/university.avif"
     city: "Shanghai"
     title: "Engineering Excellence and Research"
     description: "Shanghai Tech University is leading the way in AI, robotics, and sustainable engineering with world-class faculty and research facilities."

@@ -50,14 +50,14 @@ nav {
   display: flex;
   align-items: center;
   margin: 0;
-  gap: 6px;
-  font-weight: bold;
-  font-size: 17px;
+  gap: 5px;
+  // font-weight: bold;
+  font-size: 16px;
   padding: 0;
-  transition: all 0.2s ease;
 
   &:active {
     transform: scale(0.96);
+    transition: all 0.2s ease;
   }
 }
 
@@ -122,6 +122,7 @@ nav {
 
   @media (max-width: $mobile-screen-width) {
     display: inline-block;
+    width: 100%;
   }
 }
 
@@ -136,7 +137,11 @@ nav {
 .contacts-title {
   font-size: $index-heading-font-size;
   margin-bottom: 8px;
-  line-height: 120%;
+  line-height: 110%;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $index-heading-font-size-mobile;
+  }
 }
 
 .contacts-situation {
@@ -175,7 +180,7 @@ nav {
 }
 
 // Pages
-.pages-grants {
+.page-width {
   max-width: 900px;
 }
 
@@ -201,7 +206,7 @@ nav {
 .page-title {
   font-size: $page-title-font-size;
   line-height: 108%;
-  // letter-spacing: -1%;
+  letter-spacing: -1%;
   color: $text-color;
   margin-bottom: 12px;
   display: inline;
@@ -224,7 +229,6 @@ nav {
   }
 }
 
-
 .page-header-button {
   display: block;
   text-align: center;
@@ -233,22 +237,32 @@ nav {
   color: $button-text-color;
   border-radius: 12px;
   font-size: 20px;
-  transition: all 0.2s ease;
   margin: 24px 0;
 
   &:hover {
     transform: scale(1.01);
+    transition: all 0.2s ease;
   }
 
   &:active {
     transform: scale(1);
+    transition: all 0.2s ease;
   }
 }
 
+.header-image {
+  margin: 28px 0;
+  border-radius: 24px;
+}
+
 .page-lead {
-  font-size: 24px;
+  font-size: $page-lead-font-size;
   line-height: 140%;
   margin-bottom: 32px;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $page-lead-font-size-mobile;
+  }
 }
 
 .fotorama-wrapper {
@@ -260,16 +274,24 @@ nav {
 }
 
 .page-h2 {
-  font-size: 28px;
+  font-size: $page-h2-font-size;
   line-height: 120%;
   margin-bottom: 16px;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $page-h2-font-size-mobile;
+  }
 }
 
 .page-text {
-  font-size: 21px;
+  font-size: $page-text-font-size;
   line-height: 140%;
   margin: 4px 0 20px 0;
   max-width: 840px;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: $page-text-font-size-mobile;
+  }
 }
 
 .page-list {
@@ -291,14 +313,15 @@ nav {
   color: $button-text-color;
   border-radius: 18px;
   font-size: 26px;
-  transition: all 0.2s ease;
 
   &:hover {
     transform: scale(1.01);
+    transition: all 0.2s ease;
   }
 
   &:active {
     transform: scale(1);
+    transition: all 0.2s ease;
   }
 }
 

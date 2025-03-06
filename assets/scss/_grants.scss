@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  margin: -20px 0 60px 0;
+  margin: 0 0 60px 0;
 
   @media (max-width: $mobile-screen-width) {
     display: block;
@@ -163,9 +163,9 @@
 }
 
 .question {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 120%;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .answer {

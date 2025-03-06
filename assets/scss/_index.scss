@@ -51,14 +51,15 @@
   border-radius: 24px;
   background-color: $image-background-color;
   padding: 32px 24px;
-  transition: all 0.2s ease;
 
   &:hover {
     transform: scale(1.01);
+    transition: all 0.2s ease;
   }
 
   &:active {
     transform: scale(1);
+    transition: all 0.2s ease;
   }
 
   @media (max-width: $mobile-screen-width) {
@@ -116,23 +117,23 @@
 }
 
 .card--camp {
-  background-image: url('/assets/images/index/camp.avif');
+  background-image: url('/assets/images/camp.avif');
 }
 
 .card--grants {
-  background-image: url('/assets/images/index/grants.avif');
+  background-image: url('/assets/images/grants.avif');
 }
 
 .card--translator {
-  background-image: url('/assets/images/index/translate.avif');
+  background-image: url('/assets/images/translate.avif');
 }
 
 .card--tours {
-  background-image: url('/assets/images/index/factory.avif');
+  background-image: url('/assets/images/factory.avif');
 }
 
 .card--dental {
-  background-image: url('/assets/images/index/dental.avif');
+  background-image: url('/assets/images/dental.avif');
 }
 
 // Contacts
