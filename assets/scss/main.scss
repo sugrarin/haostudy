@@ -134,9 +134,9 @@ nav {
 }
 
 .contacts-title {
-  font-size: $index-heading-font-size;
+  font-size: 28px;
   margin-bottom: 8px;
-  line-height: 110%;
+  line-height: 112%;
 
   @media (max-width: $mobile-screen-width) {
     font-size: $index-heading-font-size-mobile;
@@ -205,7 +205,7 @@ nav {
 .page-title {
   font-size: $page-title-font-size;
   line-height: 108%;
-  letter-spacing: -1%;
+  letter-spacing: -2%;
   color: $text-color;
   margin-bottom: 12px;
   display: inline;
@@ -220,7 +220,6 @@ nav {
   font-size: $page-subtitle-font-size;
   line-height: 140%;
   color: $text-color;
-
   display: inline;
 
   @media (max-width: $mobile-screen-width) {

@@ -1,19 +1,5 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("/assets/fonts/proxima-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("/assets/fonts/proxima-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
 // Fonts
-$sans-serif-font: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, Roboto, sans-serif;
+$sans-serif-font: 'Helvetica Neue', Helvetica, Arial, Roboto, sans-serif;
 
 // Colors
 $background-color: #ffffff;
