@@ -9,15 +9,18 @@
 	<meta name="description" content="{{ .Params.description }}">
 	<meta name="keywords" content="{{ .Params.keywords }}">
 
+	<!-- Open Graph -->
 	<meta property="og:title" content="{{ .Title }}">
 	<meta property="og:description" content="{{ .Params.description }}">
 	<meta property="og:image" content="{{ .Params.image }}">
 
+	<!-- Styles -->
 	{{ $css := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
-
 	<link rel="icon" href="/assets/images/favicon.ico">
+
+	<!-- Metrika -->
 	<meta name="yandex-verification" content="ed8e81e8698e7e31" />
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
@@ -41,7 +44,14 @@
 	<noscript>
 		<div><img src="https://mc.yandex.ru/watch/100561207" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
-	<!-- /Yandex.Metrika counter -->
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Manrope:wght@200..800&display=swap"
+		rel="stylesheet">
+
 </head>
 
 <body>
